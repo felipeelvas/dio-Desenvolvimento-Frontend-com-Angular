@@ -1,4 +1,4 @@
-# Dio | Resumos Git e GitHub
+# Dio | Resumo Git e GitHub
 
 Repositório para armazenar resumos sobre Git e GitHub do curso versionamento de código com Git e GitHub de [Digital Innovation One](https://www.dio.me)
 
