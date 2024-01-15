@@ -30,3 +30,6 @@ if (formaPagamento === 1) {
 } else  {
     console.log(aplicarJuros(precoEtiqueta, 10));
 }
+
+console.log(200 * 0.1);
+console.log(10 / 100);
