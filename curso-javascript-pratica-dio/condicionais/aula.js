@@ -1,12 +1,20 @@
+const numero = 2;
 
-const numero = 11;
-const ehNumeroPar = ((numero % 2 ) === 0)
-if (ehNumeroPar)  {
-	console.log('O número é par');
+const numeroPar = (numero % 2) === '0';
+console.log(numeroPar)
 
-}else {	
-	console.log('O número é impar');
-}
+// const numeroPar = (numero % 2) === 0;
+// console.log(numeroPar)
+
+
+// const numero = 11;
+// const ehNumeroPar = ((numero % 2 ) === 0)
+// if (ehNumeroPar)  {
+// 	console.log('O número é par');
+
+// }else {	
+// 	console.log('O número é impar');
+// }
 
 // const numero = 11;
 // if ((numero % 2 ) === 0) {
