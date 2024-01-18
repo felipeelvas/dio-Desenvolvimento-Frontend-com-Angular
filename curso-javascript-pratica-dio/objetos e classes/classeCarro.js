@@ -20,7 +20,10 @@ class Carro {
 }
 
 const fusca = new Carro('Wolksvagem','vermelha',1/7);
+
 console.log(fusca.calcularGastoDePercurso(70,5));
 
 const gol = new Carro('Chevrolet', 'preta', 1/15);
+
+
 console.log(gol.calcularGastoDePercurso(70,5));

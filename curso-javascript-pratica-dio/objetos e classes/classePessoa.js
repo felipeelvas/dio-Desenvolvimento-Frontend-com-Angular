@@ -14,6 +14,7 @@ constructor(nome,peso,altura){
         this.peso = peso;
         this.altura = altura;       
     }
+    
     calcularImc(peso,altura){  
        return this.peso / Math.pow(this.altura,2);
     }
