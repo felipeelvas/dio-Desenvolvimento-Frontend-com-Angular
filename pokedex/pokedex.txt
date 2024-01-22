@@ -1,3 +1,71 @@
+O que é uma API?
+
+serve dados para nossos projetos
+como html semantica
+
+
+Requisição http
+>>URL:https://beta.pokeapi.co/graphql/console/
+${IP}/${path =  caminho de identificação do recurso}
+
+
+>>Request method: GET | POST | PUT | DELETE | PATCH
+
+
+
+Area de transferencia de dados : path
+>>query string : descrição de busca
+exemplo: get "quero todos os pokemons do tipo fogo ou fire
+estrutura de chave/valorr
+ex:
+URL:https://beta.pokeapi.co/graphql/console/
+
+type = grass
+name = i
+
+>>Request headers
+ content-type>: application/json
+configuração da nossa API
+Authorization: Bearer, basic
+como a nossa requisição esta configurada
+Accept-Language:
+pt-BR,
+pt;q=0.9,
+en-US;q=0.8,
+en;q=0.7
+
+>>Response headers
+configuração
+como a nossa resposta esta configurada
+
+>>Request Body
+corpo da requisição
+{
+    "nome"; "teste"
+    "1"; "Teste"
+}
+de acordo com o content-type : transfere dados de 
+acordo com o tipo
+pode ter tanto na requisição quanto na resposta
+ content-type>: application/json
+
+
+
+
+>>Status cloud
+Status Code:
+200 OK (sucesso)
+500 (erro interno no servidor)
+indica o que aconteceu com a nossa requisição
+>response headers
+>response body
+
+
+
+Integrando com a PokeAPI
+
+Introdução ao consumo dda PokeApi
+
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
@@ -126,8 +194,89 @@
 
 
         <!-- Nosso JS -->
+        <script>src="/assets/js/main.js"</script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Font Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+        
+        <!-- Nosso CSS -->
+        <link rel="stylesheet" href="/assets/css/global.css">
+        
+
+    </head>
+
+    <body>
+        <h1>Pokedex</h1>
+        <p>Meu primeiro site sendo feito junto de um curso da DIO</p>
+
+        <!-- Nosso JS -->
+        <script>src="/assets/js/main.js"</script>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+
+        <style>
+            h1 {
+                color: red;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Meu Primeiro Site</h1>
+        <p>Meu primeiro site sendo feito junto de um curso da DIO</p>
+
+        <button id="btnTeste" type="button">
+            Teste
+        </button>
+
         <script>
-        src="/assets/js/main.js"
+            const btnTeste = document.getElementById("btnTeste")
+           btnTeste.addEventListener("click", function (){
+            console.log("Clickou no botão")
+           })         
         </script>
     </body>
 </html>
