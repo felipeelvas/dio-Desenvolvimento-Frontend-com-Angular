@@ -1,31 +1,31 @@
 
 // //CONCEITOS BÁSICOS SOBRE FUNÇÕES AULA 01
-// // function incrementoJuros(valor, percentualJuros){
-// //     const valorAcrescimo = ((percentualJuros / 100) * valor );
+function incrementoJuros(valor, percentualJuros){
+    const valorAcrescimo = ((percentualJuros / 100) * valor );
 
-// //     return valor + valorAcrescimo;
-// //     }
+    return valor + valorAcrescimo;
+    }
     
-// //     console.log(incrementoJuros(100,10));
-// //     console.log(incrementoJuros(100,15));
-// //     console.log(incrementoJuros(100,20));
+    console.log(incrementoJuros(100,10));
+    console.log(incrementoJuros(100,15));
+    console.log(incrementoJuros(100,20));
 
 
 
-// // function quadrado(valor){
-// // return valor * valor;
-// // }
+function quadrado(valor){
+return valor * valor;
+}
 
-// // console.log(quadrado(10) + quadrado(10));
+console.log(quadrado(10) + quadrado(10));
 
-// // const quadradoDeDez = quadrado(10);
-// // console.log(quadradoDeDez);
+const quadradoDeDez = quadrado(20);
+console.log(quadradoDeDez);
 
 
-// // function sayMyName(name){
-// //     console.log('Your name is: ' + name)
-// // }
-// // sayMyName("felipe");
+function sayMyName(name){
+    console.log('Your name is: ' + name)
+}
+sayMyName("felipe");
 
 // // function teste(){
 // // console.log('teste');

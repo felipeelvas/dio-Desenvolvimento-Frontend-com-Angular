@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
     <title>Pokedex</title>
 
     <!-- Normalize CSS -->
@@ -16,7 +17,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
-
+   
+    <!-- Font Pokemon -->
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+   
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
@@ -25,19 +29,58 @@
 <body>
     <section class="content">
         <h1>Pokedex</h1>
-
+        <div class="optionsDiv">
+            <div class="select">
+                <select name="filter-poke" id="poke-type-filter" >
+                    <option>Choose a Type</option>
+                    <option value="all">all</option>
+                    <option value="bug">bug</option>
+                    <option value="dragon">dragon</option>
+                    <option value="electric">electric</option>
+                    <option value="fairy">fairy</option>
+                    <option value="fighting">fighting</option>
+                    <option value="fire">fire</option>
+                    <option value="flying">flying</option>
+                    <option value="ghost">ghost</option>
+                    <option value="grass">grass</option>
+                    <option value="ground">ground</option>
+                    <option value="ice">ice</option>
+                    <option value="normal">normal</option>
+                    <option value="poison">poison</option>
+                    <option value="psychic">psychic</option>
+                    <option value="rock">rock</option>
+                    <option value="steel">steel</option>
+                    <option value="water">water</option>
+                </select>
+            </div>
+            <div> 
+                <input class="seasons-btn" id="firstSeasonBtn" type="button" value="Show All">    
+            </div> 
+        </div>
         <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
+            <!-- ..... Pokemons here .....  -->
+            
         </ol>
 
-        <div class="pagination">
+        <!-- <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More
             </button>
-        </div>
+        </div> -->
     </section>
 
-    <!-- Nosso JS -->
+    <div class="modal" id="modal-id">
+        <div id="modalpoke">Pokemon com detalhes
+            <input type="button" value="X" class="closeButton">
+        </div>
+    </div>
+    <div id="github">
+        <p>Made with &#10083; by <br> Felipe Elvas Barbosa <br>
+            <a href="https://github.com/felipeelvas"  style="text-decoration: none;" target="_blank">GitHub Profile</a>
+        </p>
+    </div >
+
+    <!-- Nosso JS  -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
