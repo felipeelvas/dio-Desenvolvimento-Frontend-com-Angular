@@ -8,31 +8,25 @@
   <button (click)="adicionar()">Adicionar</button>
 </ul>
 <div [ngSwitch]="menuType">
-  <div *ngSwitchCase="'user'">
-    <ul>
-      <li>editar perfil</li>
-      <li>adicionar cartão</li>
-     </ul>
-
-  </div>
-  <div *ngSwitchCase="'admin'"> <ul>
-    <li>editar perfil</li>
-    <li>adicionar cartão</li>
-    <li>gerencar usuários</li>
-   </ul>
-  </div>
-
-
-  '''853
-  5845.
-  -
-  <div *ngSwitchCase="'superUser'">
-    <ul>
-      <li>editar perfil</li>
-      <li>adicionar cartão</li>
-      <li>gerencar usuários</li>
-      <li>gerencar admins</li>
-     </ul>
-  </div>
-
+    <div *ngSwitchCase="'user'">
+        <ul>
+            <li>editar perfil</li>
+            <li>adicionar cartão</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'admin'">
+        <ul>
+            <li>editar perfil</li>
+            <li>adicionar cartão</li>
+            <li>gerencar usuários</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'superUser'">
+        <ul>
+            <li>editar perfil</li>
+            <li>adicionar cartão</li>
+            <li>gerencar usuários</li>
+            <li>gerencar admins</li>
+        </ul>
+    </div>
 </div>
