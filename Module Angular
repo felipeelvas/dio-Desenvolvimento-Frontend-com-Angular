@@ -1,0 +1,21 @@
+Module Angular
+
+App Module
+
+são caixinhas:
+serve para armazenar os components
+
+
+exemplos:
+ 
+card module
+
+video module
+
+Anatomia de módulos Angular
+
+é uma caixinha de coisas
+modulo principal que importa outros sub-modulos
+
+
+bootstrap significa inicialização
